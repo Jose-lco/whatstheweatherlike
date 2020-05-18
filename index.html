@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
+        <span class="navbar-brand mb-0 h1 ">Weather Dashboard</span>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <label for="citylabel">Search for a City:</label>
+                    <div class="row">
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="col-3">
+                        <button type="submit" class="btn btn-primary mb-2">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="search-history">
+
+                </div>
+            </div>
+            <div class="col-8" id="display-weather">
+                <div class="card">
+                    <div class="card-body" id="current-weather">
+
+                    </div>
+                </div>
+                <div>
+                    <h4>5 day Forecast:</h4>
+                </div>
+                <div class="card-deck" id="five-day-forecast">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
