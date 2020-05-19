@@ -64,13 +64,11 @@ let retrieveSearchHistory = function () {
     $.each(cities, function (index, city) {
         createCityButtons(city);
     });
-    displayWeatherInfo(cities[cities.length - 1])
 }
 $("button").on("click", function (event) {
     event.preventDefault()
     let chosenCity = $("#city").val().trim();
     displayWeatherInfo(chosenCity);
-    createCityButtons(chosenCity);
     storeSearchHistory();
 });
 $(".search-history").on("click", "button", function (event) {
@@ -79,4 +77,5 @@ $(".search-history").on("click", "button", function (event) {
     displayWeatherInfo(city);
 })
 retrieveSearchHistory(); 
+displayWeatherInfo(cityArr[cityArr.length - 1])
 });
