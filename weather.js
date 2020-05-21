@@ -60,8 +60,7 @@ let storeSearchHistory = function () {
     localStorage.cityStorage = JSON.stringify(cityArr);
 };
 let retrieveSearchHistory = function () {
-    let cities = JSON.parse(localStorage.cityStorage);
-    $.each(cities, function (index, city) {
+    $.each(cityArr, function (index, city) {
         createCityButtons(city);
     });
 }
