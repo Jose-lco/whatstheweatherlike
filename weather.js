@@ -53,7 +53,7 @@ $(document).ready(function (){
         let searchHistory = `<button type="button" class="btn btn-light btn-block">${cityName}</button>`
         $(".search-history").append(searchHistory);
     };
-    let cityArr = JSON.parse(window.localStorage.cityStorage) || [];
+    let cityArr = JSON.parse(localStorage.cityStorage) || [];
     let storeSearchHistory = function () {
         let chosenCity = $("#city").val().trim();
         cityArr.push(chosenCity);
